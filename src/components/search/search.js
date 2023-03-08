@@ -22,6 +22,7 @@ export class Search extends DivComponent {
 		<button aria-label='Искать'><img src="/static/search-white.svg" alt="search-btn"></button>
 		`;
 		this.el.querySelector('button').addEventListener('click', this.search.bind(this));
+
 		this.el.querySelector('input').addEventListener('keydown', (event) => {
 			if (event.code === 'Enter') {
 				this.search();
